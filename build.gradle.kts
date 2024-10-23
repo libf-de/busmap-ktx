@@ -34,6 +34,9 @@ kotlin {
     sourceSets {
         nativeMain.dependencies {
             implementation(libs.kotlinxSerializationJson)
+            implementation(libs.ktor.client.core)
+            implementation(libs.ktor.client.curl)
+            implementation(libs.ktor.client.cio)
         }
     }
 }
